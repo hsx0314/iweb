@@ -1,0 +1,20 @@
+/* 此文件中包含所有文件公用的全局css */
+*{
+	/* box-sizing: content-box; 内容盒子*/
+	box-sizing: border-box;/*边框盒子，简化盒子尺寸计算*/
+}
+body{
+	margin: 0;
+	color: #555;
+	background-color: #fff;
+	font-size: 12px;/*字体大小*/
+	line-height: 1.667em;
+	font-family: "arial, helvetica, sans-serif";/*字体风格*/
+}
+a{
+	color: #555;
+	text-decoration: none;
+}
+a:hover{
+	color: #f60;
+}
