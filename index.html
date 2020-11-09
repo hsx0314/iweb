@@ -128,6 +128,7 @@
 		.navbar .menu  li{
 			float: left;
 			padding-left: 1.5em;
+			padding-right: 1.5em;
 			
 		}
 		.navbar .menu  li:hover{
@@ -136,6 +137,113 @@
 		.navbar  .menu  li  a{/* 使用复杂选择器具有更高优先级 */
 			color: #fff;
 		}
+		.navbar  .menu1{
+			float: right;
+			width: 140px;
+			height: 40px;
+			background: #77c558;
+			padding-left: 34px;
+			padding-right: 34px;
+		}
+		.navbar  .menu1  a{
+			color: #fff;
+		}
+		.navbar  .menu1  a:hover{
+			color: #ffff99;
+		}
+		.main > .container{
+			
+		}
+		.main > .container  section{
+			display: block;
+			
+		}
+		
+		
+		.main  .title{
+			position: relative;
+			height: 38px;
+			line-height: 38px;
+			width: 1000px;
+			border-bottom: 2px solid #ddd;
+			margin-top: 20px;
+			margin-bottom: 0;
+		}
+		.main  .title  span{
+			
+			position: relative;
+			padding: 5px 15px;
+			font-size: 18px;
+			border-bottom:2px solid #57BC4C;
+			background: #fff;
+			z-index: 1;
+		}
+		.main  .title  a{
+			float: right;
+			font-size: 14px;
+			color: #999;
+		}
+		.main  .title  a:hover{
+			color: #f60;
+		}
+		.main  .select  ul{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+		.main  .select  li{
+			float: left;
+			margin-top: 20px;
+			margin-right: 40px;
+		}
+		.main .select  a{
+			display: block;
+			line-height: 24px;
+		}
+		.main  .select  p{
+			margin: 0;
+			line-height: 24px;
+		}
+		.main  .select  strong{
+			font-size: 16px;
+			color: #f60;
+			font-weight: 18px;
+			line-height: 24px;
+		}
+		.main  .select  .teacher  li{
+			margin-right: 25px;
+			text-align: center;
+		}
+		.footer{
+			margin-top: 50px;
+			background: #eee;
+			border-top: 1px solid #ddd;
+		}
+		.footer > .container{
+			width: 1000px;
+			height: 197px;
+			margin:  0 auto;
+		}
+		.footer  ul {
+			float: left;
+			display: block;
+		}
+		
+		.footer  .container  ul  li{
+			float: left;
+			width: 60px;
+			height: 120px;
+			margin-right: 110px;
+			line-height: 24px;
+		}
+		.footer  ul  li  h5{
+			margin: 0;
+			font-size: 14px;
+			font-weight: lighter;
+		}
+		
+		
 	</style>
 	</head>
 	<body>
@@ -158,8 +266,6 @@
 					<span class="fa fa-mobile-phone fa-lg"></span>
 					客服热线：4000-200-200
 				</span>
-
-
 			</div>
 		</div>
 
@@ -176,8 +282,8 @@
 						<span>我的购物车(<b>0</b>)</span>
 						<span class="fa fa-caret-down theme caret" id="caret"></span>
 					</div>
-						<!-- 下拉菜单 -->
-						<div class="dropdown" id="dropdown">请登录后查看你的购物车</div>
+					<!-- 下拉菜单 -->
+					<div class="dropdown" id="dropdown">请登录后查看你的购物车</div>
 				</div>
 				<!--2. 输入框 -->
 				<div class="search">
@@ -185,7 +291,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- 3.导航条 -->
 		<div class="navbar">
 			<div class="container">
@@ -200,12 +306,165 @@
 					<li><a href="school.html">校区</a></li>
 				</ul>
 				<!-- 右侧的登录/注册列表 -->
+				<div class="menu1">
+					<a href="#">登录</a>
+					<span>|</span>
+					<a href="#">注册</a>
+				</div>
 			</div>
-		</div> 
-		
-		
-		
-		
+		</div>
+
+		<!-- 4.滚动条 -->
+
+		<!-- 5.栏目 -->
+		<div class="main">
+			<div class="container">
+				<div class="select">
+					<!-- 最新课程 -->
+					<div class="title">
+						<span>最新课程</span>
+						<a href="#">更多</a>
+					</div>
+					<!--最新课程： 具体课程 -->
+					<ul>
+						<li>
+							<img src="img/course/01.jpg">
+							<a href="#">12-微信小程序开发</a>
+							<p>讲师：程涛</p>
+							<strong>¥ 599.00</strong>
+						</li>
+						<li>
+							<img src="img/course/02.jpg">
+							<a href="#">11-Unity地形搭建</a>
+							<p>讲师：张东</p>
+							<strong>¥ 600.00</strong>
+						</li>
+						<li>
+							<img src="img/course/03.jpg">
+							<a href="#">10-UI控件之基础控件</a>
+							<p>讲师：李然</p>
+							<strong>¥ 450.00</strong>
+						</li>
+						<li style="margin-right: 0;">
+							<img src="img/course/04.jpg">
+							<a href="#">09-微信小程序高级</a>
+							<p>讲师：成亮</p>
+							<strong>¥ 200.00</strong>
+						</li>
+					</ul>
+				</div>
+
+				<div class="select">
+					<!-- 热门课程 -->
+					<div class="title">
+						<span>热门课程</span>
+						<a href="#">更多</a>
+					</div>
+					<!--热门课程： 具体课程 -->
+					<ul>
+						<li>
+							<img src="img/course/04.jpg">
+							<a href="#">09-微信小程序高级</a>
+							<p>讲师：成亮</p>
+							<strong>¥ 200.00</strong>
+						</li>
+						<li>
+							<img src="img/course/01.jpg">
+							<a href="#">12-微信小程序开发</a>
+							<p>讲师：张东</p>
+							<strong>¥ 599.00</strong>
+						</li>
+						<li>
+							<img src="img/course/06.jpg">
+							<a href="#">10-UI控件之基础控件</a>
+							<p>讲师：李然</p>
+							<strong>¥ 600.00</strong>
+						</li>
+						<li style="margin-right: 0;">
+							<img src="img/course/05.jpg">
+							<a href="#">05-零基础绘图入门(上)</a>
+							<p>讲师：成亮</p>
+							<strong>¥ 350.00</strong>
+						</li>
+					</ul>
+				</div>
+
+				<div class="select">
+					<!-- 名师堂 -->
+					<div class="title">
+						<span>名师堂</span>
+						<a href="#">更多</a>
+					</div>
+					<!--名师堂：讲师 -->
+					<ul class="teacher">
+						<li>
+							<img src="img/teacher/cl.jpg">
+							<p>讲师：成亮</p>
+							<span>主讲：WEB全栈开发 </span>
+						</li>
+						<li>
+							<img src="img/teacher/lr.jpg">
+							<p>讲师：程涛</p>
+							<span>主讲：移动APP开发 </span>
+						</li>
+						<li>
+							<img src="img/teacher/zd.jpg">
+							<p>讲师：张东</p>
+							<span>主讲：JS高级编程</span>
+						</li>
+						<li>
+							<img src="img/teacher/ct.jpg">
+							<p>讲师：李然</p>
+							<span>主讲：高级网页设计 </span>
+						</li>
+						<li style="margin-right: 0;">
+							<img src="img/teacher/jyx.jpg">
+							<p>讲师：纪盈鑫</p>
+							<span>主讲：前端框架开发 </span>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<!--6.尾部 -->
+		<div class="footer">
+				<div class="container">
+					<ul>
+						<li>
+							<h5>关于i前端</h5>
+							<a href="#">发展历程</a>
+							<a href="#">管理团队</a>
+							<a href="#">企业文化</a>
+							<a href="#">加入我们</a>
+						</li>
+						<li>
+							<h5>新手帮助</h5>
+							<a href="#">学员账号</a>
+							<a href="#">选课流程</a>
+							<a href="#">企业文化</a>
+							<a href="#">上课地点</a>
+						</li>
+						<li>
+							<h5>关于i前端</h5>
+							<a href="#">如何注册</a>
+							<a href="#">如何搜课</a>
+							<a href="#">如何报名</a>
+							<a href="#">如何缴费</a>
+						</li>
+						<li>
+							<h5>联系我们</h5>
+							<a href="#">校区电话</a>
+							<a href="#">意见建议</a>
+							<a href="#">联系邮箱</a>
+						</li>
+					</ul>
+				</div>
+		</div>
+
+
 		<script>
 			// 鼠标悬停“我的购物车”则后面的小三角开始旋转；离开则转回来
 			myCart.onmouseenter = () => {
@@ -218,7 +477,6 @@
 				cart.classList.remove('open')
 				dropdown.classList.remove('open')
 			}
-
 		</script>
 	</body>
 </html>
